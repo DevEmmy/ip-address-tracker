@@ -1,0 +1,136 @@
+.header{
+  width: 100%;
+  height:250px;
+  background: url(./images/pattern-bg.png);
+
+}
+.header > h2{
+  color: white;
+  margin-top: 0;
+  padding-top: 60px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.header form{
+  width: 40%;
+  margin: 20px auto;
+  display: flex;
+}
+
+.header form > input{
+  width: 100%;
+  padding: 18px 30px;
+  border-radius: 10px 0 0 10px;
+  border: none;
+  font-size: 20px;
+}
+
+.header > form > input:focus{
+    outline: none;
+}
+
+.header > form > button{
+  background: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 0 10px 10px 0;
+  color: white;
+  cursor: pointer;
+}
+
+.location_data{
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  background: white;
+  border-radius: 10px;
+  padding: 20px 40px;
+  box-shadow: 0 7px 16px rgba(0,0,0,0.3);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.location_data > .content > h6{
+  color: rgb(150,150,150);
+}
+
+
+
+.btn{
+  margin: 20px auto 0 auto;
+  width: 20%;
+  padding: 15px 10px;
+  border: 2px solid black;
+  border-radius: 6px;
+  text-align:center;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.btn:hover{
+  color: white;
+  background-color: black;
+}
+
+.leaflet-container {
+  width: 60%; 
+  height: 80vh;
+  box-sizing: border-box;
+  z-index: 3;
+  position: absolute;
+  top: 10vh;
+  left: 20%;
+  right: 20%;
+  border: 2px solid white;
+  box-shadow: 0 7px 16px rgba(0,0,0,0.3);
+  border-radius: 10px;
+}
+
+.darklayout{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0,0,0,0.7);
+}
+
+@media only screen and (max-width:600px) {
+  .header > h2{
+      font-size: 30px;
+  }
+
+  .header > form{
+    width: 90%;
+  }
+
+  .header > form > input{
+    padding: 10px 20px;
+    border-radius: 6px 0 0 6px;
+    font-size: 18px;
+    color: rgb(60,60,60);
+  }
+
+  .header > form > button{
+    border-radius: 0 6px 6px 0;
+  }
+
+  .location_data{
+    flex-direction: column;
+    text-align: center;
+    width: 60%;
+  }
+
+  .btn{
+    width: 60%;
+  }
+
+  .leaflet-container{
+    width: 90%;
+    left: 5%;
+    right: 5%;
+  }
+}
